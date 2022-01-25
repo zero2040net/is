@@ -7,6 +7,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="styles.css">
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,127 +21,6 @@ body {
   margin: 0;
   font-family: 'Space Mono', monospace;
   background-color: hsl(120, 100%, 98%);
-}
-
-/* Style the side navigation */
-.sidenav {
-  position: fixed;
-  overflow-x: show;
-  overflow-y: scroll;
-  top: 5px; /*100px to give some room for the sidebar heading (without this, absolute position will make the nav overlap)*/
-  left: 5px; /* you can make this zero and add `padding-left: 15px` */
-  bottom: 15px; /* leave some room for copyright section */
-  right: 75%; /*this may vary from browser to browser (i suggest using the width of the widest scrollbar, then adjust for padding-right)*/
-}
-
-.sidenav .container{
-    max-width: 20px;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    margin-left: auto;
-    margin-right: 75%;
-    height: 100%;
-    position: absolute;
-    overflow: hidden;
-}
-
-
-/* Side navigation links */
-.sidenav a {
-  color: black;
-  padding: 16px;
-  text-decoration: none;
-  display: block;
-  align: left;
-  text-align: left;
-}
-
-/* Change color on hover */
-.sidenav a:hover {
-  color: black;
-}
-
-/* Style the content */
-.content {
-  margin-left: 25%;
-  margin-right: 0%;
-}
-
-/* Style the profile picture */ 
-.avatar {
-  vertical-align: middle;
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  border: solid 3px #00ff15;
-  border-width: 4px;
-}
-
-/* Style the profile picture */ 
-.avatar-small {
-  vertical-align: middle;
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-}
-
-.footer {
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   padding-right: 10px;
-   padding-bottom: 10px;
-   background-color: transparent;
-   color: black;
-   text-align: right;
-}
-
-/* Clearfix (clear floats) */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-  .accordion {
-  background-color: #f5fff5;
-  color: #000000;
-  cursor: pointer;
-  padding: 10px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 14px;
-  transition: 0.4s;
-}
-
-.active, .accordion:hover {
-  background-color: #f5fff5; 
-}
-
-.panel {
-  padding: 0 18px;
-  display: none;
-  background-color: #f5fff5;
-  overflow: show;
-}
-
-  .accordion:after {
-  content: '▼';
-  color: #000000;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
-}
-
-.active:after {
-  content: "▲";
-}
-
-.responsive {
-  width: 100%;
-  height: auto;
 }
   
   <style>
@@ -163,7 +43,7 @@ h3 {
 }
 p1 {
   font-family: 'Space Mono', monospace;
-  font-size: 5px;
+  font-size: 20px;
   }
 p2 {
   font-family: 'Space Mono', monospace;
@@ -171,11 +51,11 @@ p2 {
   }
 p3 {
   font-family: 'Space Mono', monospace;
-  font-size: 70px
+  font-size: 60px
   }
 p4 {
   font-family: 'Space Mono', monospace;
-  font-size: 40px
+  font-size: 70px
   }
 </style>
 </head>
@@ -184,16 +64,27 @@ p4 {
 <div class="sidenav">
   <a href=""><img src="is.png" alt="Avatar" class="avatar"></a>
   <p>Iceland</p>
+  <p2><a href="https://parisagreement.zero2050.net" target="_blank">1.5°C Paris Agreement goal</a></p2>
 </div>
 
 <div class="content">
   <br>
-  <p3 id="demo"></p3>
+  <p4 id="demo"></p4>
   <br>
+  <p>Warming @ rate of</p>
+  <p4>2.37°C ± 0.44°C</p4>
+  <p2>per century since 1960</p2>
   <br>
-  <p4> Warming since 1960 (°C / century) </p4>
-  <p3> 2.37 ± 0.44 </p3>
-  <p2><a href="http://berkeleyearth.org/" target="_blank"> Source: Berkeley Earth </a></p2>
+  <p>2020</p>
+  <p4>+1.6°C</p4>
+  <p2>Relative to a late 19th century baseline</p2>
+  <br>
+  <p>2100</p>
+  <p4>+3.1°C</p4>
+  <p2>Relative to a late 19th century baseline</p2>
+  <br>
+  <p>Source: <a href="http://berkeleyearth.org/" target="_blank">Berkeley Earth</a></p>
+  <br>
   <br>
   <br>
   <br>
@@ -273,6 +164,9 @@ var x = setInterval(function() {
   <br>
 
  <div class="footer">
+ <br>
+ <p1>⦿ Carbon Neutral</p1>
+ <p><a href="https://github.blog/2021-04-22-environmental-sustainability-github/" target="_blank">• zero2040.net ○ GitHub</a></p>
  <p2> Zero Ecosystem is a not for profit company limited by guarantee (Company No. 13349586) registered in England, United Kingdom </p2>
  <br>
   <img src="favicon.png"
